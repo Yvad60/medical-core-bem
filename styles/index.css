@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #252b42;
+}
+
+.title {
+  color: #1ba0ab;
+  font-weight: 700;
+}
+
+.description-text {
+  font-size: 14px;
+  color: #737373;
+  line-height: 20px;
+  font-weight: 400;
+}
+.description-text--big {
+  font-size: 20px;
+  line-height: 30px;
+}
+button {
+  padding: 15px 25px 15px 25px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+}
+.button--primary {
+  background-color: #1ba0ab;
+  color: white;
+}
+
+.button--secondary {
+  background-color: transparent;
+  display: inline-block;
+  outline: 2px solid #1ba0ab;
+  color: #1ba0ab;
+}
+
+.button--wide {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.header {
+  display: flex;
+  background-color: #fff5f0;
+  padding: 20px 195px 20px 195px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__first-nav {
+  display: flex;
+  align-items: center;
+  gap: 61px;
+}
+.header__links-container {
+  display: flex;
+  gap: 21px;
+}
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.header__link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #737373;
+}
+.header__link--green {
+  color: #1ba0ab;
+}
+
+.header__auth-links {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+/* hero section */
+
+.hero {
+  padding: 163px 132px 163px 132px;
+  background-color: #fff5f0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero__btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.hero__heading {
+  font-size: 58px;
+  line-height: 80px;
+  max-width: 542px;
+}
+
+.meet-section {
+  padding: 160px 197px 160px 197px;
+  display: flex;
+  align-items: center;
+  gap: 144px;
+}
+
+.meet-section__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 381px;
+}
+
+.meet-section__line {
+  height: 7px;
+  width: 94px;
+  background-color: #e74040;
+}
+.section-heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.meet-section__description {
+  margin-right: 30px;
+}
+
+.team-section {
+  padding: 112px 198px 112px 198px;
+}
+
+.team-section__text-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.team-section__description{
+  max-width: 469px;
+}
+.team-section__cards-container{
+  margin-top: 112px;
+}
