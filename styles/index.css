@@ -138,14 +138,77 @@ button {
   padding: 112px 198px 112px 198px;
 }
 
-.team-section__text-container{
+.team-section__text-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.team-section__description{
+.team-section__description {
   max-width: 469px;
 }
-.team-section__cards-container{
+.team-section__cards-container {
   margin-top: 112px;
+}
+.team-section__cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  gap: 30px;
+}
+.person-card {
+  max-width: 238px;
+  gap: 30px;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.person-card__image {
+  width: 100%;
+}
+.person-card__content {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.person-card__person-name {
+  font-weight: 700;
+}
+.person-card__proffesion {
+  font-size: 12px;
+  color: #737373;
+  font-weight: 400;
+}
+.person-card__socials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  padding: 160px 195px 160px 195px;
+  background-color: #fff5f0;
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+.footer__description {
+  max-width: 469px;
+}
+.footer__input-container {
+  display: flex;
+  margin-top: 81px;
+  justify-content: center;
+}
+.footer__input {
+  padding-left: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  max-width: 600px;
+  width: 100%;
 }
