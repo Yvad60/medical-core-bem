@@ -9,15 +9,44 @@ body {
   color: #252b42;
 }
 
-.section-text__title {
-  color: #1ba0ab;
+button {
+  padding: 15px 25px 15px 25px;
+  font-size: 14px;
   font-weight: 700;
+  border-radius: 5px;
+  border: none;
+}
+
+.button--primary {
+  background-color: #1ba0ab;
+  color: white;
+}
+
+.button--secondary {
+  background-color: transparent;
+  border: 2px solid #1ba0ab;
+  color: #1ba0ab;
+}
+
+.button--wide {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.button--sharp-left-edges {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .section-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.section-text__title {
+  color: #1ba0ab;
+  font-weight: 700;
 }
 
 .section-text__heading {
@@ -57,35 +86,6 @@ body {
   gap: 30px;
 }
 
-.description-text--big {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-button {
-  padding: 15px 25px 15px 25px;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 5px;
-  border: none;
-}
-
-.button--primary {
-  background-color: #1ba0ab;
-  color: white;
-}
-
-.button--secondary {
-  background-color: transparent;
-  border: 2px solid #1ba0ab;
-  color: #1ba0ab;
-}
-
-.button--wide {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
 .header {
   display: flex;
   background-color: #fff5f0;
@@ -100,15 +100,15 @@ button {
   gap: 61px;
 }
 
-.header__links-container {
-  display: flex;
-  gap: 21px;
-}
-
 .header__logo {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
+}
+
+.header__links-container {
+  display: flex;
+  gap: 21px;
 }
 
 .header__link {
@@ -119,14 +119,14 @@ button {
   color: #737373;
 }
 
-.header__link--green {
-  color: #1ba0ab;
-}
-
 .header__auth-links {
   display: flex;
   align-items: center;
   gap: 45px;
+}
+
+.header__link--green {
+  color: #1ba0ab;
 }
 
 .hero {
@@ -137,15 +137,9 @@ button {
   gap: 30px;
 }
 
-.hero__btn-container {
+.hero__buttons-container {
   display: flex;
   gap: 10px;
-}
-
-.hero__heading {
-  font-size: 58px;
-  line-height: 80px;
-  max-width: 542px;
 }
 
 .meet-section {
@@ -168,9 +162,6 @@ button {
 
 .team-section__cards-container {
   margin-top: 112px;
-}
-
-.team-section__cards-container {
   display: grid;
   grid-template-columns: repeat(4, 240px);
   gap: 30px;
