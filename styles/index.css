@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #252b42;
+}
+
+.button {
+  padding: 15px 25px 15px 25px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+}
+
+.button--primary {
+  background-color: #1ba0ab;
+  color: white;
+}
+
+.button--secondary {
+  background-color: transparent;
+  border: 2px solid #1ba0ab;
+  color: #1ba0ab;
+}
+
+.button--wide {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.button--sharp-left-edges {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-text__title {
+  color: #1ba0ab;
+  font-weight: 700;
+}
+
+.section-text__heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.section-text__heading--big {
+  font-size: 58px;
+  line-height: 80px;
+  max-width: 542px;
+}
+
+.section-text__description {
+  font-size: 14px;
+  color: #737373;
+  line-height: 20px;
+  font-weight: 400;
+  max-width: 469px;
+}
+
+.section-text__description--big {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.section-text--centered {
+  align-items: center;
+  text-align: center;
+}
+
+.section-text--long-gap {
+  gap: 35px;
+}
+
+.section-text--medium-gap {
+  gap: 30px;
+}
+
+.header {
+  display: flex;
+  background-color: #fff5f0;
+  padding: 20px 195px 20px 195px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__first-nav {
+  display: flex;
+  align-items: center;
+  gap: 61px;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.header__links-container {
+  display: flex;
+  gap: 21px;
+}
+
+.header__link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #737373;
+}
+
+.header__auth-links {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.header__link--green {
+  color: #1ba0ab;
+}
+
+.hero {
+  padding: 163px 132px 163px 132px;
+  background-color: #fff5f0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero__buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.meet-section {
+  padding: 160px 197px 160px 197px;
+  display: flex;
+  align-items: center;
+  gap: 144px;
+}
+
+.meet-section__line {
+  height: 7px;
+  width: 94px;
+  background-color: #e74040;
+  margin-bottom: 35px;
+}
+
+.team-section {
+  padding: 112px 198px 112px 198px;
+}
+
+.team-section__cards-container {
+  margin-top: 112px;
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  gap: 30px;
+}
+
+.person-card {
+  max-width: 238px;
+  gap: 30px;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.person-card__image {
+  width: 100%;
+}
+
+.person-card__content {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.person-card__person-name {
+  font-weight: 700;
+}
+
+.person-card__proffesion {
+  font-size: 12px;
+  color: #737373;
+  font-weight: 400;
+}
+
+.person-card__socials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  padding: 160px 195px 160px 195px;
+  background-color: #fff5f0;
+}
+
+.footer__input-container {
+  display: flex;
+  margin-top: 81px;
+  justify-content: center;
+}
+.footer__input {
+  padding-left: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px 0 0 5px;
+  width: 600px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 20px;
+  }
+  .section-text__heading--big {
+    font-size: 38px;
+    line-height: 40px;
+    max-width: 542px;
+  }
+  .team-section__cards-container {
+    grid-template-columns: 240px;
+    justify-content: center;
+  }
+  .meet-section {
+    flex-direction: column;
+  }
+  .meet-section__image {
+    width: 90vw;
+  }
+  .header__links-container {
+    display: none;
+  }
+  .hero {
+    padding: 63px 20px 63px 20px;
+  }
+  .meet-section {
+    padding: 60px 20px 60px 20px;
+  }
+  .team-section {
+    padding: 50px 20px 112px 20px;
+  }
+  .footer {
+    padding: 60px 20px 60px 20px;
+    background-color: #fff5f0;
+  }
+  .footer__input-container {
+    flex-direction: column;
+    margin-top: 41px;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer__input {
+    padding: 15px 25px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
