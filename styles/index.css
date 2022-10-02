@@ -9,7 +9,7 @@ body {
   color: #252b42;
 }
 
-button {
+.button {
   padding: 15px 25px 15px 25px;
   font-size: 14px;
   font-weight: 700;
